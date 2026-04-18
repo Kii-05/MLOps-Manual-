@@ -1,0 +1,16 @@
+Read me MLOps
+
+Breast Cancer Prediction Model
+Overview
+This project develops and evaluates machine learning models for breast cancer prediction using the Breast Cancer Wisconsin (Diagnostic) dataset. The goal is to accurately classify breast masses as malignant or benign based on diagnostic features.
+
+Key Steps
+Data Loading & Preprocessing: Loaded data, handled duplicates/missing values, and engineered new features like mean_area_log, radius_area_ratio, and is_anomaly.
+Data Splitting & Scaling: Divided data into training/testing sets (80/20) and applied StandardScaler for feature standardization.
+Model Development: Trained and evaluated Logistic Regression (baseline and regularized) and Random Forest (baseline and simpler) models.
+Evaluation: Assessed models using accuracy, precision, recall, and F1-score, saving results.
+Model Persistence: Saved trained models and the scaler using joblib for future use.
+Prediction Pipeline: Created a function to streamline predictions on new data, incorporating preprocessing steps.
+Retraining: Demonstrated model retraining with simulated new data to adapt to evolving datasets.
+Conclusion
+The project successfully implemented a complete ML workflow, with Logistic Regression models (especially the regularized version) showing strong predictive performance for breast cancer classification.
